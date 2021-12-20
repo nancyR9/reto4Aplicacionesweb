@@ -39,8 +39,8 @@ public class ClleaningProductController {
         return  productService.delete(id);
     }
 
-    @GetMapping("/{reference}")
-    public Optional<CleaningProduct> getProduct(@PathVariable("reference") Integer id){
+    @GetMapping("/{id}")
+    public Optional<CleaningProduct> getProduct(@PathVariable("id") Integer id){
         return productService.getProduct(id);
     }
 
